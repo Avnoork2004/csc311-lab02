@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="256.0" prefWidth="371.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.csc311_lab2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="209.0" prefWidth="331.0">
+      <children>
+         <Label layoutX="2.0" layoutY="5.0" text="Annual Interest Rate: " />
+         <Label layoutX="3.0" layoutY="36.0" text="Number of Years: " />
+         <Label layoutX="3.0" layoutY="68.0" text="Loan Amount: " />
+         <Label layoutX="3.0" layoutY="101.0" text="Monthly Payment: " />
+         <Label layoutX="3.0" layoutY="131.0" text="Total Payment: " />
+          <Button fx:id="btnCalculator" layoutX="204.0" layoutY="159.0" onAction="#onHelloButtonClick" text="Calculator" textAlignment="RIGHT" />
+         <TextField fx:id="txtAnnualInterestRate" layoutX="139.0" layoutY="2.0" prefHeight="17.0" prefWidth="135.0" />
+         <TextField fx:id="txtNumberOfYears" layoutX="139.0" layoutY="34.0" prefHeight="25.0" prefWidth="135.0" />
+         <TextField fx:id="txtLoanAmount" layoutX="139.0" layoutY="64.0" prefHeight="25.0" prefWidth="135.0" />
+         <TextField fx:id="txtMonthlyPayment" layoutX="140.0" layoutY="96.0" prefHeight="25.0" prefWidth="135.0" />
+         <TextField fx:id="txtTotalPayment" layoutX="139.0" layoutY="127.0" prefHeight="25.0" prefWidth="135.0" />
+      </children>
+   </Pane>
+</VBox>
