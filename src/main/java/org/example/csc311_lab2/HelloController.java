@@ -53,6 +53,7 @@ public class HelloController {
             txtTotalPayment.setText(String.format("$%.2f", totalPayment));
 
         }
+
         catch (NumberFormatException e) {
             //  error will pop up if something other than numbers are entered
             Alert alert = new Alert(AlertType.ERROR);
